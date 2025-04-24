@@ -2,7 +2,7 @@
 
 This is the final project for my R coding class at UH Manoa focused on learning how to clean, analyze, and visualize externally provided data. This work will be done with publicly attained files to prepare me for my bioinformatics pipeline I will be completing utilizing other organisms microbiomes. The human microbiome is a well documented and known biome and will be the baseline as I attempt to recreate graphical interpretations of the data while also finding novel approaches to viewing said data. 
 
-![Gut Microbiota Graphic](https://github.com/k3ttl3gurl/finalprojectRClass/blob/main/Gut-Microbiota-Graphic-1.png)
+![Gut-Microbiota-Graphic](Images/Gut-Microbiota-Graphic-1.png)
 
 # Project
 The NIH Human Microbiome Project (HMP) maps the microorganisms on and in the human body, creating one of the largest and most comprehensive microbiome datasets. It’s pivotal in understanding how microbial communities influence human health, particularly in areas like obesity, diabetes, and gut disorders.
