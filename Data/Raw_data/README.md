@@ -1,44 +1,37 @@
 # README.md
 
-This folder contains the raw data for this project. We begin with the data provided with the Palmerpenguins R package, which you can install in R using `install.packages("palmerpenguins")`
+# Overview:
+The National Institutes of Health (NIH) Human Microbiome Project (HMP) aims to map the microorganisms (microbiota) that live in and on the human body and to understand their role in human health. By using advanced sequencing technologies, the HMP has generated one of the largest and most well-documented microbiome datasets in the world. It provides a comprehensive reference for understanding microbial communities from various body sites, including the gastrointestinal (gut) tract.
 
-Generally, any dataset should contain some meta-data explaining what each variable in the dataset is, or a **Data Dictionary**. 
+The HMP has been invaluable for studying the microbiome's role in human health, disease, and physiology. It focuses on understanding the interplay between human hosts and microbes and how this relationship impacts conditions like obesity, diabetes, and various gastrointestinal disorders.
 
-This dataset contains 17 columns, 16 data columns and one comment field, as explained in `datadictionary.csv` or the table below. 
+# Why I Chose 16S Data:
+For my project, I decided to focus on the 16S rRNA gene sequencing data from the HMP. This gene is a highly conserved region of DNA that is found in all bacteria and archaea, making it an excellent marker for microbial identification and classification. The 16S data provides a rich resource for studying microbial diversity, abundance, and the relative composition of microbial communities in the human gut.
 
-Raw data sets should **generally not be edited by hand**. It should instead be loaded and processed/cleaned using code.
+16S rRNA sequencing is a widely-used method for microbial community profiling, particularly in studies of gut microbiomes. Its relatively low cost, high throughput, and ability to identify a broad range of microorganisms make it the ideal choice for my research, particularly as I aim to understand microbiome dynamics in relation to gastrointestinal health.
 
-Not all of these columns are interesting for analysis (e.g., `studyName`) and you may want to drop them in your processed data. 
+# Why the HMP:
+The Human Microbiome Project (HMP) is regarded as the most complete and well-documented microbiome reference available. It includes data from a variety of human body sites (including the gut) and is supported by extensive metadata, making it an excellent choice for microbiome research. The HMP’s extensive coverage and the credibility of its datasets have made it a standard resource in the field.
 
-As the raw data that comes with the package `penguins_raw` are pretty clean, I purposely prepared a dirtier version for you to work on that will provide a more realistic data analysis pipeline experience.
+# Citation:
+You can access the data through the NIH Human Microbiome Project Data Portal at the following link: Human Microbiome Project Data Portal
 
-`penguins_raw_dirty.csv` contains some random data entry errors that need to be cleaned. If you want to see how this was created, check out `Project_template/Code/Processing_code/typos.R`
+For reference, please cite the project as follows: The Human Microbiome Project Consortium. "A framework for human microbiome research." Nature 486, 215–221 (2012). DOI: 10.1038/nature11209
 
-Your first task is to find the faulty values and clean them using the techinques weʻve been learning in class, and save the cleaned dataset in `../Processed_data/`. Please save both `.rda` and `.csv` versions, and include a data dictionary in the `README.md`.  
+# Dr. Presting notes
 
-The code for processing the raw data should be in **Project_template > Code > Processing_code**, and should run from that working directory.  Please use **relative paths** from that working directory to load and save files. 
+# Using readr
+library(readr)
+data <- read_tsv("path_to_file.tsv")  # Load the TSV
+write_csv(data, "path_to_output.csv")  # Save it as CSV
+
+# Or using base R
+data <- read.delim("path_to_file.tsv")  # Load the TSV
+write.csv(data, "path_to_output.csv", row.names = FALSE)  # Save it as CSV
 
 
-# Data Dictionary `penquins_raw.csv`
+# Data Dictionary 
 
-|variable| description|
-|----------|--------------|
-| studyName | Sampling expedition from which data were collected, generated, etc.| 
-| Sample Number | an integer denoting the continuous numbering sequence for each sample| 
-| Species | a character string denoting the penguin species| 
-| Region | a character string denoting the region of Palmer LTER sampling grid| 
-| Island | a character string denoting the island near Palmer Station where samples were collected| 
-| Stage | a character string denoting reproductive stage at sampling| 
-| Individual ID | a character string denoting the unique ID for each individual in dataset| 
-| Clutch Completion | a character string denoting if the study nest observed with a full clutch, i.e., 2 eggs| 
-| Date Egg | a date denoting the date study nest observed with 1 egg (sampled)| 
-| Culmen Length | a number denoting the length of the dorsal ridge of a bird's bill (millimeters)| 
-| Culmen Depth | a number denoting the depth of the dorsal ridge of a bird's bill (millimeters)| 
-| Flipper Length | an integer denoting the length penguin flipper (millimeters)| 
-| Body Mass | an integer denoting the penguin body mass (grams)| 
-| Sex | a character string denoting the sex of an animal| 
-| Delta 15 N | a number denoting the measure of the ratio of stable isotopes 15N:14N| 
-| Delta 13 C | a number denoting the measure of the ratio of stable isotopes 13C:12C| 
-| Comments | a character string with text providing additional relevant information for data| 
+
 
 

@@ -1,31 +1,21 @@
 # Overview
 
-This project is part of an R coding class focused on learning how to clean, analyze, and visualize externally provided data. It follows a structured approach using R, Quarto, and GitHub to promote reproducibility and good data science practices.
+This is the final project for my R coding class at UH Manoa focused on learning how to clean, analyze, and visualize externally provided data. This work will be done with publicly attained files to prepare me for my bioinformatics pipeline I will be completing utilizing other organisms microbiomes. The human microbiome is a well documented and known biome and will be the baseline as I attempt to recreate graphical interpretations of the data while also finding novel approaches to viewing said data. 
 
-![Data science pipeline](https://github.com/mbutler808/rclass/blob/main/images/dspipeline.png)
-[Figure: The Data Science Pipeline from RD Peng](https://rdpeng.github.io/Biostat776/lecture-the-data-science-pipeline.html)
+![Gut Microbiota Graphic](https://github.com/k3ttl3gurl/finalprojectRClass/blob/main/Gut-Microbiota-Graphic-1.png)
 
 # Project
+The NIH Human Microbiome Project (HMP) maps the microorganisms on and in the human body, creating one of the largest and most comprehensive microbiome datasets. It’s pivotal in understanding how microbial communities influence human health, particularly in areas like obesity, diabetes, and gut disorders.
 
-The Palmer Penguin Project is a dataset used for ecological and statistical analysis, featuring three species of penguins: Adelie, Chinstrap, and Gentoo—collected from the Palmer Archipelago in Antarctica. The dataset includes measurements such as flipper length, bill depth, and body mass, along with categorical data like sex and species. It is often used as a cleaner, more intuitive alternative to the classic Iris dataset for machine learning and data visualization tasks. The project aims to support ecological research while serving as a valuable educational resource for data science and statistical modeling.
+This project serves as a preliminary analysis for exploring 16S sequencing data and bioinformatics pipelines, providing a foundation for understanding microbiome composition and its implications in health and disease.
 
 # History
 
-- **2023-02-16**: First release with Data and Code folders with materials for data cleaning and initial exploration.
-- **2025-03-01**: Cloned from M. Butler repo for R Class Spring 2025.
-- **2025-03-20**: Original Submission by Brianna Correa with Data Cleaning Edits.
-- **2025-04-01**: Currently under renovation for data cleaning.
-- **2025-04-02**: Finished data cleaning, Project 2 underway.
-- **2025-04-04**: Issues with laptop key stick, Project 2 questions formulated, .qmd edits made, script testing
-- **2025-04-05**: Finalizing script, changing questions
-- **2025-04-06**: Fixed script, approved readme.md and .qmds, Project 2 complete, script run without error after "source()" check. 
+- **2024-04-02**: Found Human Microbiome Data 
+- **2025-04-23**: Created Repo for project along with relevant files/raw human microbiome data 
 
 ### Updates:
-- Code now runs without issues, producing figures required for the project.
-- Data has been processed and cleaned; bivariate plots and required histograms have been created to demonstrate the cleaned data.
-- Corrections have been made to GitHub to match local files. The README file has been updated to reflect the project.
-- Outliers are properly handled and documented.
-- Packages are not recommended for download unless necessary.
+- No updates at this time.
 
 # Acknowledgement
 
@@ -43,13 +33,3 @@ For more R packages supporting reproducible research, check out the task view: [
 - **Code Folder**: Contains all code created, including relevant subfolders.
 - Further modifications can be expected in the future.
 
-# Template Content
-
-- You will want to review the README.md files in the **Code** and **Data** folders for more details regarding the Palmer Penguins morphology and life history data we are utilizing.
-- The **Processing_code** folder has the original raw data as well as the cleaned data.
-- More updates related to **Project 2** will follow in the future.
-
-# Getting Started
-
-As noted earlier, this project is currently in progress. As of **April 1, 2025**, please refer only to the **Code** and **Data** folders for any relevant changes. As of **April 6, 2025**, all files are active, and we are in the later phase of the project analysis, which will help answer questions utilizing our cleaned data and facilitate a valuable discussion surrounding the findings.
-# finalprojectRClass
