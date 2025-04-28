@@ -13,6 +13,13 @@ For my project, I decided to focus on the 16S rRNA gene sequencing data from the
 # Why the HMP:
 The Human Microbiome Project (HMP) is regarded as the most complete and well-documented microbiome reference available. It includes data from a variety of human body sites (including the gut) and is supported by extensive metadata, making it an excellent choice for microbiome research. The HMP’s extensive coverage and the credibility of its datasets have made it a standard resource in the field.
 
+# Type of Files within Raw Data
+
+Excel (.xlsx) 41522_2022_345_MOESM1_ESM.xlsx (converted into .csv)
+CSVs HMPphase1_Supplementary_Table_1.csv, HMPphase1_Supplementary_Table_2.csv, HMPphase1_Supplementary_Table_3.csv, HMPphase1_Supplementary_Table_4.csv
+.tst HMPWgs_*.txt files (Sample, Participant, Studies, etc.)
+Script: (processing_microbiomedat.R) 
+
 # Citation:
 You can access the data through the NIH Human Microbiome Project Data Portal at the following link: Human Microbiome Project Data Portal
 
@@ -32,6 +39,16 @@ write.csv(data, "path_to_output.csv", row.names = FALSE)  # Save it as CSV
 
 # Data Dictionary 
 
+# New Skills with this Project 
 
+gsub(pattern, replacement, text)
+
+Example:
+
+gsub(" ", "_", "Hello World")
+# Result: "Hello_World"
+
+So: 
+ gsub(" ", "_", sheet)
 
 
