@@ -9,11 +9,9 @@ otu_file_path <- here("Data", "Raw_data", "salamander_OTU_table.csv")
 metadata_file_path <- here("Data", "Raw_data", "SraRunTable_Seq.csv")
 
 # === LOAD AND CLEAN DATA ===
-otu_data <- read.csv(otu_file_path) %>%
-  clean_names()
+otu_data <- read.csv("Final Project_Correa/Data/Raw_data/salamander_OTU_table.csv")
 
-metadata <- read.csv(metadata_file_path) %>%
-  clean_names()
+metadata <- read.csv("Final Project_Correa/Data/Raw_data/metadata_with_otu_counts.csv")
 
 # === EXPLORE STRUCTURE & MISSING VALUES ===
 glimpse(otu_data)
