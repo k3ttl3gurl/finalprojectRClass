@@ -1,0 +1,1 @@
+# This is a true analysis of microbiome data from the frogs. This data set was structured a bit oddly but overall showed some interesting things throughout the process. I was able to create alpha and Shannon diversity runs while I worked through it. 

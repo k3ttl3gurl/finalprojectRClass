@@ -34,6 +34,9 @@ Aided in removing missing values, standardizing columns, names, filtered outlier
 - Statistical Modeling: Tables in manuscript
 - Visualization: .png
 
+## Documentation for Phylogenetic Tree
+* Purpose: Summarize host species in phylogenetic tree, mostly for practice
+
 ## Order of Execution:
 
 Run Script 1 (Data Processing and Cleaning) first to prepare the data.
