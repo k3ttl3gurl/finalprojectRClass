@@ -7,8 +7,8 @@ taxonomy <- read.csv("../../Data/Raw_data/salamander_OTU_table.csv",
                      stringsAsFactors = FALSE)
 
 # Read the data without setting row names initially
-abundance <- read.csv("../../Data/Raw_data/sampledata_with_otu_counts.csv", 
-                      check.names = FALSE)
+abundance <- read.csv("../../Data/Raw_data/sampledata_with_otu_counts.csv", stringsAsFactors = FALSE, check.names = FALSE)
+
 
 # Check the first few rows to see how the data is structured
 head(abundance)
