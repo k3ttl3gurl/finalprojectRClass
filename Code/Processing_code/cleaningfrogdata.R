@@ -4,14 +4,12 @@ library(readr)
 library(here)
 
 # === DEFINE FILE PATHS ===
-
 otu_file_path <- here("Data", "Raw_data", "salamander_OTU_table.csv")
-metadata_file_path <- here("Data", "Raw_data", "SraRunTable_Seq.csv")
+metadata_file_path <- here("Data", "Raw_data", "metadata_with_otu_counts.csv")
 
 # === LOAD AND CLEAN DATA ===
-otu_data <- read.csv("Final Project_Correa/Data/Raw_data/salamander_OTU_table.csv")
-
-metadata <- read.csv("Final Project_Correa/Data/Raw_data/metadata_with_otu_counts.csv")
+otu_data <- read.csv(otu_file_path)
+metadata <- read.csv(metadata_file_path)
 
 # === EXPLORE STRUCTURE & MISSING VALUES ===
 glimpse(otu_data)
