@@ -3,7 +3,7 @@ library(pheatmap)
 library(dplyr)
 
 # Read taxonomy data
-taxonomy <- read.csv("../../Data/Raw_data/salamander_OTU_table.csv", 
+taxonomy <- read.csv("../../Data/Raw_data/frog_OTU_table.csv", 
                      stringsAsFactors = FALSE)
 
 # Read the data without setting row names initially
@@ -78,4 +78,4 @@ pheatmap(as.matrix(abundance_matrix),
          annotation_colors = annotation_colors,
          color = colorRampPalette(c("navy", "white", "firebrick3"))(100),
          fontsize_row = 10,  # Adjust if necessary
-         show_rownames = TRUE)
+         show_rownames = FALSE)

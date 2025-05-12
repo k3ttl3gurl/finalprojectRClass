@@ -9,8 +9,7 @@ This was to demonstrate what it takes to actually be able to clean through these
 The most important element is keeping straight which is which:
 
 Human Microbiome: 
-cleaning_microbiomedat.R
-visualize_microbiomedat.R
+CleanHumanDataMicrobiome.R
 
 Amphibian Microbiome:
-cleaningfrogdata.R
+CleanFrogDataMicrobiome.R

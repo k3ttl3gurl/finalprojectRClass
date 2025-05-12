@@ -1,0 +1,26 @@
+"Supplementary Table S2: 16S/WGSS data processing notes per dataset","...2","...3","...4","...5","...6","...7","...8","...9","...10","...11","...12","...13","...14"
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"(1) ‘Yes’ indicates that the raw data required demultiplexing, ‘No’ indicates it was already demultiplexed;",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"(2) ‘Right trimming’ is the length to which all sequences were trimmed as part of the DADA2 algorithm. Reads with shorter lengths are discarded. For most datasets we chose to trim sequences to the location where the median quality dropped below 30. In cases of relatively high-quality reads, we chose a threshold so that we maintain at least 99.9% of the reads. In cases of relatively low-quality reads, we adopted the same thresholds as those used in the original study.",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"(3) ‘Left trimming’ is the number of nt’s trimmed from the beginning of each sequence in order to remove primers/adapters;",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"(4) ‘Yes’ indicates that paired end reads were merged, as part of DADA pipeline. ‘No’ indicates that even though raw data included paired reads, only forward reads were chosen due to inability to maintain a high-quality overlap required for merging. ‘NA’ indicates the data was single-end;",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"(5) Statistics averaged over forward and backward reads;",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"Dataset ID","16S data processing",NA,NA,NA,NA,NA,NA,NA,"WGSS data",NA,NA,NA,NA
+NA,"Raw data available","Raw data preparation and denoising",NA,NA,NA,"Denoising statistics",NA,"Taxonomy annotation","Raw data available","Statistics (5)",NA,NA,"Taxonomy annotation"
+NA,NA,"Demultiplexed (1)","Right trimming (2)","Left trimming (3)","Merged paired ends (4)","Avg. high-quality (denoised) sequences per sample","Number of ASVs","Taxonomy annotation method",NA,"Avg. number of reads in raw fastq files","Avg. number of reads after quality filtering","Avg. number of reads after host filtering","Taxonomy annotation method"
+"YACHIDA_CRC_2019","-","-","-","-","-","-","-","-","Yes","15187219.593817787","15187218.125813449","15186345.503253795","kraken2 and bracken with GTDB reference database"
+"FRANZOSA_IBD_2019","-","-","-","-","-","-","-","-","Yes","15030173.955056179","14585278.988764046","14336757.303370787","kraken2 and bracken with GTDB reference database"
+"SINHA_CRC_2016","No, QIIME-based genus-level taxonomy was used instead","-","-","-","-","-","-","OTU clustering and alignment with QIIME1 (in original study). Mapping to GTDB.","-","-","-","-","-"
+"HE_INFANTS_MFGM","Yes","Yes","292","No","Already paired in the raw data obtained","10.2K","2.8K","assignTaxonomy function (DADA2 R package) with a GTDB reference database","-","-","-","-","-"
+"iHMP_IBDMDB_2019","-","-","-","-","-","-","-","-","Yes","10826036.153164556","10826030.353164557","10817935.358227849","kraken2 and bracken with GTDB reference database"
+"JACOBS_IBD_RELATIVES_2016","Yes","No","101","No","NA","537K","3.7K","assignTaxonomy function (DADA2 R package) with a GTDB reference database","-","-","-","-","-"
+"POYET_BIO_ML_2019","Yes","No","Forward - 150, 
+Reverse - 142","Forward - 5, Reverse - 10","Yes","32.3K","1.6K","assignTaxonomy function (DADA2 R package) with a GTDB reference database","-","-","-","-","-"
+"ERAWIJANTARI_GASTRIC_CANCER_2020","-","-","-","-","-","-","-","-","Yes","16015092.5","16015089.031446541","16014616.402515722","kraken2 and bracken with GTDB reference database"
+"KIM_ADENOMAS","Yes","No","231","No","No","21.5K","3.6K","assignTaxonomy function (DADA2 R package) with a GTDB reference database","-","-","-","-","-"
+"MARS_IBS_2020","-","-","-","-","-","-","-","-","Yes","1166633.7307692308","1165220.9644970414","1164200.9822485207","kraken2 and bracken with GTDB reference database"
+"KANG_AUTISM_2018","Yes","Yes","250","No","No","18.7K","4.6K","assignTaxonomy function (DADA2 R package) with a GTDB reference database","-","-","-","-","-"
+"KOSTIC_INFANTS_DIABETES_2015","Yes","No","173","No","Yes","46K","3.7K","assignTaxonomy function (DADA2 R package) with a GTDB reference database","-","-","-","-","-"
+"WANDRO_PRETERMS_2018","Yes","No","140","18","Yes","27.7K","275","assignTaxonomy function (DADA2 R package) with a GTDB reference database","-","-","-","-","-"
+"WANG_ESRD_2020","-","-","-","-","-","-","-","-","Yes","37397558.22260274","37394708.31678082","37378334.239726029","kraken2 and bracken with GTDB reference database"
