@@ -5,7 +5,7 @@ library(vegan)
 library(ggplot2)
 
 # 1. Load the data
-otu_matrix <- read.csv("../../Data/Raw_data/frog_OTU_table.csv", row.names = 1, check.names = FALSE)
+otu_matrix <- read.csv("../../Data/Raw_data/frog_OTU_table.csv", check.names = FALSE)
 metadata <- read.csv("../../Data/Raw_data/SraRunTable_Seq.csv")
 
 # 2. Check for 'sample_name' in both
@@ -21,8 +21,8 @@ otu_wide <- otu_matrix %>%
 merged_data <- metadata %>%
   inner_join(otu_wide, by = "sample_name")
 
-# 5. (Optional) Save merged data
-write.csv(merged_data, "merged_metadata_otu.csv", row.names = FALSE)
+# 5. Save merged data
+write.csv(merged_data, "../../Data/Processed_data/merged_metadata_otu.csv", row.names = FALSE)
 
 # 6. Summary Tables
 cat("\nBd Status Breakdown:\n")
@@ -58,7 +58,7 @@ alpha_div_plot <- ggplot(alpha_div_df, aes(x = Bd_status, y = Shannon, fill = se
 
 print(alpha_div_plot)
 
-ggsave("C:/Users/brnna/classr/Final Project_Correa/Images/shannon_diversity_plot.png", 
+ggsave("../../Images/shannon_diversity_plot.png", 
        plot = alpha_div_plot, width = 8, height = 6)
 
 # 8. Beta Diversity - Bray-Curtis PCoA
@@ -81,7 +81,7 @@ pcoa_plot <- ggplot(pcoa_df, aes(x = PC1, y = PC2, color = sex, shape = Bd_statu
 
 print(pcoa_plot)
 
-ggsave("C:/Users/brnna/classr/Final Project_Correa/Images/pcoa_bray_curtis_plot.png", 
+ggsave("../../Images/pcoa_bray_curtis_plot.png", 
        plot = pcoa_plot, width = 8, height = 6)
 
 # 9. Sample Map
@@ -93,7 +93,7 @@ if (all(c("LATITUDE", "LONGITUDE") %in% colnames(metadata))) {
   
   print(location_plot)
   
-  ggsave("C:/Users/brnna/classr/Final Project_Correa/Images/geographic_distribution_plot.png", 
+  ggsave("../../Images/geographic_distribution_plot.png", 
          plot = location_plot, width = 8, height = 6)
 } else {
   cat("LATITUDE and LONGITUDE columns not found in metadata.\n")
@@ -104,3 +104,5 @@ positive_guatemala <- subset(metadata, Bd_status == "Positive" & grepl("Guatemal
 
 cat("\nNumber of Bd-positive samples from Guatemala:", nrow(positive_guatemala), "\n")
 print(positive_guatemala[, c("sample_name", "geo_loc_name", "Bd_status")])
+
+cat("\n Successfully Completed \n")
