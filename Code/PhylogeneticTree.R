@@ -35,3 +35,10 @@ plot(tree, type = "phylogram", tip.color = "blue", cex = 0.9, main = "Phylogenet
 
 # Add node numbers
 nodelabels(node = 1:Nnode(tree), cex = 0.7, adj = c(0.5, -0.5))
+
+# Save the plot as PNG in specified folder
+
+png(filename = "../Images/phylogenetic_tree.png", width = 800, height = 600)
+plot(tree, type = "phylogram", tip.color = "blue", cex = 0.9, main = "Phylogenetic Tree of Host Frog Species")
+nodelabels(node = 1:Nnode(tree), cex = 0.7, adj = c(0.5, -0.5))
+dev.off()
