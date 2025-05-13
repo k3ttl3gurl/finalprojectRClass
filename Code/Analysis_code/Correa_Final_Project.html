@@ -1,0 +1,95 @@
+<h1 id="overview">Overview</h1>
+<p>This is a replicated microbiome analysis using only frogs, inspired
+by a broader amphibian study that compared salamander and frog skin
+microbiota. The original dataset structure was a bit messy, but it
+revealed some interesting patterns. I processed the data, rarefied the
+OTU table, and performed indicator species analysis by habitat type.</p>
+<h2 id="map-of-sampling-sites">Map of Sampling Sites</h2>
+<figure>
+<img src="Images/map.png" alt="Map" />
+<figcaption aria-hidden="true">Map</figcaption>
+</figure>
+<h2 id="geographic-distribution-plot">Geographic Distribution Plot</h2>
+<figure>
+<img src="Images/geographic_distribution_plot.png"
+alt="Geo Distribution" />
+<figcaption aria-hidden="true">Geo Distribution</figcaption>
+</figure>
+<p>A heatmap showing relative abundance of bacterial OTUs across frog
+individuals grouped by habitat. Rows represent unique OTUs; columns are
+individual frogs. Colors represent percent abundance after
+rarefaction.</p>
+<h1 id="indicator-species-analysis-by-habitat">Indicator Species
+Analysis by Habitat</h1>
+<p>Frogs sampled from pine-oak forests exhibited a unique set of
+indicator bacterial taxa that were largely absent from those found in
+fir and cloud forests. Interestingly, fir and cloud forest frogs shared
+more similarities in their microbiomes. This suggests a strong influence
+of habitat type on microbial composition.</p>
+<h2 id="heatmap-of-otus">Heatmap of OTUs</h2>
+<figure>
+<img src="Images/Heat_Map.png" alt="Heatmap of OTUs" />
+<figcaption aria-hidden="true">Heatmap of OTUs</figcaption>
+</figure>
+<p><strong>Heatmap rows</strong>: bacterial OTUs at species-level
+classification<br />
+<strong>Heatmap columns</strong>: individual frogs<br />
+<strong>Vertical labels</strong>: Indicator OTUs associated with each
+habitat type</p>
+<h2 id="bray-curtis-plot">Bray Curtis Plot</h2>
+<p>A Bray Curtis plot visualizing the microbial diversity similarity
+between frog samples based on their habitat.</p>
+<figure>
+<img src="Images/pcoa_bray_curtis_plot.png" alt="PCoA Plot" />
+<figcaption aria-hidden="true">PCoA Plot</figcaption>
+</figure>
+<h2 id="shannon-diversity-plot">Shannon Diversity Plot</h2>
+<p>This plot shows Shannon diversity for frog microbiomes across
+habitats.</p>
+<figure>
+<img src="Images/shannon_diversity_plot.png" alt="Shannon Diversity" />
+<figcaption aria-hidden="true">Shannon Diversity</figcaption>
+</figure>
+<h1 id="discussion">Discussion</h1>
+<p>Results show that habitat has a stronger influence than host
+phylogeny at shallow taxonomic levels (e.g., within genera/species).
+While phylogenetic relatedness might explain differences at broader
+taxonomic scales, environmental factors seem to be the primary driver of
+microbial diversity in this frog-focused subset.</p>
+<h2 id="phylogenetic-tree">Phylogenetic Tree</h2>
+<p>The phylogenetic tree illustrates the evolutionary relationships
+between the frogs and their microbiomes.</p>
+<figure>
+<img src="Images/phylogenetic_tree.png" alt="Tree" />
+<figcaption aria-hidden="true">Tree</figcaption>
+</figure>
+<p>Frogs from the same habitat tended to share more OTUs than those from
+different habitats. The presence of unique indicator taxa suggests
+possible environmental filtering by microhabitat conditions like
+moisture, elevation, and substrate. This aligns with findings from
+previous amphibian microbiome studies, which showed that site and
+habitat can be stronger predictors of microbial community structure than
+host taxonomy.</p>
+<h1 id="limitations">Limitations</h1>
+<ul>
+<li>Environmental microbiome samples were not included, so we can’t
+fully assess substrate influence.</li>
+<li>All frogs sampled were from montane forest regions, so broader
+environmental conclusions are limited.</li>
+</ul>
+<h1 id="conclusion">Conclusion</h1>
+<p>Despite the limited scope, this replication using frogs supports the
+original study’s findings: habitat plays a critical role in shaping
+amphibian skin microbiomes. Even in the absence of phylogenetic depth,
+clear differences in microbial community structure emerge across
+habitats. Changes in habitat — through deforestation or climate shifts —
+may result in altered microbiome composition, potentially increasing
+vulnerability to pathogens like <em>Batrachochytrium dendrobatidis</em>
+(Bd).</p>
+<h1 id="code-and-data">Code and Data</h1>
+<p>Processed using R and Geneious.</p>
+<h2 id="frog-image">Frog Image</h2>
+<figure>
+<img src="Images/frog.png" alt="Frog" />
+<figcaption aria-hidden="true">Frog</figcaption>
+</figure>
